@@ -1,0 +1,9 @@
+<% @creatures.each do |creature| %>
+  <p>
+    Name: <%= creature.name %>
+    Description: <%= creature.description %>
+    <%= link_to "Show Bog", creature_path(creature) %>
+  </p>
+<% end %>
+
+<%= link_to "Add Bog", new_creature_path %>
