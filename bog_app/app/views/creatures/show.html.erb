@@ -1,0 +1,7 @@
+<h1> Creature Details</h1>
+Name: <%= @creature.name %>
+Description: <%= @creature.description %>
+<br>
+<%= link_to "Edit", edit_creature_path %>
+<%= link_to "Delete", @creature, method: :delete %>
+<%= link_to "Back", creatures_path %>

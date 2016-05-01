@@ -1,0 +1,8 @@
+<h1> List of all Creatures</h1>
+<% @creatures.each do |creature| %>
+<p>Name:<%= creature.name %>
+Description: <%= creature.description %>
+<%= link_to "Show", creature_path(creature) %>
+<% end %>
+</p>
+<%= link_to "Add Creature", new_creature_path %>
