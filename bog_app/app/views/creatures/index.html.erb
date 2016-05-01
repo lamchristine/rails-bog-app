@@ -1,0 +1,9 @@
+<h1> List of all Creatures</h1>
+<% @creatures.each do |creature| %>
+<p><strong>Name:</strong> <%= creature.name %>
+<strong>Description:</strong> <%= creature.description %>
+</p>
+<%= link_to "Show Details", creature_path(creature)  %>
+<%= link_to "Delete", creature, method: :delete %>
+<% end %>
+<%= link_to "Add New Creature", new_creature_path %>
